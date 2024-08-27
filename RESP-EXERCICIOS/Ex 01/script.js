@@ -120,13 +120,14 @@ let iniciaTemporizador = function (fps, onoff) {
 tela = new Tela();
 tela.cls();
 let produto = 0;
-let x = y = 0;
+let x = 0;
+let y = 0;
 
 for (let i = 1; i <= 12; i++) {
     for (let j = 1; j <= 12; j++) {
         produto = i * j;
-        x = 50 * i;
-        y = 40 * j;
+        x = 50 * j;
+        y = 40 * i;
         if (i == j) {
             tela.defCor('darkred');
         } else {
