@@ -13,7 +13,7 @@ body {
     margin-right: auto;
     padding: 10px;
     width: 70%;
-    height: 150px;
+    height: fit-content;
     background-color: rgba(216, 241, 253, 0.1);
     border: 4px dashed white;
     border-radius: 10px;
