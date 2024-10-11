@@ -1,0 +1,93 @@
+body {
+    display: block;
+    margin: 0;
+    padding: 0;
+    background-color: darkolivegreen;
+}
+
+.container {
+    display: flex;
+}
+
+.quadrinho {
+    display: flex;
+    margin: auto;
+    margin-bottom: 10px;
+    background-color: orange;
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 3px 3px 3px 0px inset white,
+        -3px -3px 3px 0px inset black,
+        2px 3px 4px 1px rgb(0, 0, 0, 0.6);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 2em;
+}
+
+.coluna-esquerda {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: auto;
+    margin-top: 30px;
+    padding: 20px;
+    height: fit-content;
+    background-color: darkgray;
+    width: 30%;
+    border-radius: 14px 0 14px 0;
+    box-shadow: 3px 3px 3px 0px inset white,
+        -3px -3px 3px 0px inset black,
+        2px 5px 8px 1px rgb(0, 0, 0, 0.5);
+}
+
+.coluna-direita {
+    display: block;
+    margin: auto;
+    margin-top: 30px;
+    padding: 20px;
+    padding-bottom: 50px;
+    height: fit-content;
+    background-color: rgb(255, 255, 255, 0.4);
+    width: 50%;
+    border-radius: 14px 0 14px 0;
+    box-shadow: 3px 3px 3px 0px inset white,
+        -3px -3px 3px 0px inset black,
+        2px 5px 8px 1px rgb(0, 0, 0, 0.5);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.4em;
+    color: white;
+}
+
+.rotulo {
+    margin-top: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.2em;
+    color: white;
+    text-shadow: 2px 2px black;
+}
+
+.resposta {
+    color: orange;
+    font-weight: 900;
+}
+
+.btn {
+    display: flex;
+    margin: auto;
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    font-weight: bolder;
+    background-color: orange;
+    box-shadow: 3px 3px 3px 0px inset white,
+        -3px -3px 3px 0px inset black,
+        2px 3px 4px 1px rgb(0, 0, 0, 0.6);
+    font-size: 2em;
+}
+
+.mensagem {
+    height: 40px;
+    text-align: center;
+}
+
