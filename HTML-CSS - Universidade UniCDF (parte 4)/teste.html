@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Container</title>
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .container {
+            display: flex;
+            flex: 1;
+            flex-direction: column;
+            overflow-y: auto;
+        }
+
+        nav {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+        }
+
+        section {
+            flex: 1;
+            padding: 10px;
+            background-color: #f4f4f4;
+            overflow-y: auto; /* Certifique-se de que o conteúdo da seção role */
+        }
+
+        .content {
+            min-height: 1500px; /* Exemplo de conteúdo grande */
+            background: linear-gradient(to bottom, #f4f4f4, #999);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            Navegação
+        </nav>
+        <section>
+            <div class="content">
+                Conteúdo longo
+            </div>
+        </section>
+    </div>
+</body>
+</html>
